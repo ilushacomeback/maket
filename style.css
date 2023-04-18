@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "TTLakes-Regular";
+    src: url("./fonts/TTLakes-Regular.woff") format("woff");
+}
+body {
+    font-family: "TTLakes-Regular";
+}
+.nobullet {
+    list-style-type: none;
+    display: flex;
+}
+/* overflow */
