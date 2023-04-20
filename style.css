@@ -2,25 +2,43 @@
     font-family: "TTLakes-Regular";
     src: url("./fonts/TTLakes-Regular.woff") format("woff");
 }
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: "TTLakes-Regular";
     width: 100%;
+}
+main {
+    background: #f8f8f8;
 }
 .nobullet {
     list-style-type: none;
     display: flex;
 }
+
 .header-list {
- 
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
 }
+
 .service-list-item {
     width: fit-content;
     display: inline;
     border: 10px solid;
     border-left: 0;
     margin-left: 0;
-    border-color: white;
+    border-color: #f8f8f8;
     line-height: 24px;
+    color: #7E7E82;
+    padding-left: 20px;
+}
+.service-list-item a {
+    text-decoration: none;
+    color: #7E7E82;
 }
 .service-list {
     justify-content: space-between;
@@ -30,13 +48,25 @@ body {
 }
 p {
     width: 90%;
-    margin-left: 10px;
+    margin: 10px;
     font-size: 14px;
     /* text-align: justify; */
 }
 h1 {
-    margin-left: 10px;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 28px;
 }
 .service-list::-webkit-scrollbar { 
     width: 0;
 }
+.continion a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 15px;
+}
+span {
+    margin: 10px;
+}
+
