@@ -4,9 +4,39 @@
 }
 body {
     font-family: "TTLakes-Regular";
+    width: 100%;
 }
 .nobullet {
     list-style-type: none;
     display: flex;
 }
-/* overflow */
+.header-list {
+ 
+}
+.service-list-item {
+    width: fit-content;
+    display: inline;
+    border: 10px solid;
+    border-left: 0;
+    margin-left: 0;
+    border-color: white;
+    line-height: 24px;
+}
+.service-list {
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 16px;
+    overflow-x: auto;
+}
+p {
+    width: 90%;
+    margin-left: 10px;
+    font-size: 14px;
+    /* text-align: justify; */
+}
+h1 {
+    margin-left: 10px;
+}
+.service-list::-webkit-scrollbar { 
+    width: 0;
+}
