@@ -26,12 +26,44 @@ main {
     list-style-type: none;
     display: flex;
 }
-
-.header-list {
-    justify-content: space-around;
-    padding: 5px;
-    margin: 10px;
+.header {
+    display: flex;
+    justify-content: space-between;
 }
+
+.stick {
+    list-style-type: none;
+    margin-top: 20px;
+}
+ 
+.burger {
+    margin-top: 5px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+}
+.logo {
+    margin-bottom: 3px;
+}
+
+.status {
+    margin-top: 5px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.repair {
+    margin-top: 5px;
+    margin-right: 16px;
+} 
+
+.header-left {
+    margin-top: 10px;
+    
+}
+.header-right {
+    margin-top: 10px;
+}   
 
 .service-list {
     justify-content: space-between;
@@ -62,6 +94,7 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     background-color: white;
+    transition: all 0.2s ease-in-out;
 }
 p {
     font-family: "TTLakes-Regular";
