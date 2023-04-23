@@ -16,6 +16,7 @@
 body {
     font-family: "TTLakes-Regular";
     width: 100%;
+    background-size: 100%;
     background-color: #f8f8f8;
 }
 
@@ -118,7 +119,7 @@ h1 {
 .logo::after {
     content: url(./img/divider.png);
     position: absolute;
-    left: 183px;
+    left: 188px;
     top: 20px;
     width: 10px;
     height: 10px;
@@ -212,6 +213,22 @@ span {
         right: 135px;
 
     }
+
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
     
+    .highlight {
+        position: absolute;
+        display: block;
+        margin-top: 27px;
+    }
 }
 
