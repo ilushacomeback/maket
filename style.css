@@ -16,10 +16,7 @@
 body {
     font-family: "TTLakes-Regular";
     width: 100%;
-}
-
-main {
-    background: #f8f8f8;
+    background-color: #f8f8f8;
 }
 
 .nobullet {
@@ -30,14 +27,13 @@ main {
 .header {
     display: flex;
     justify-content: space-between;
+    background: #fff; 
 }
 
- 
 .burger {
     margin-top: 5px;
     padding-right: 16px;
     padding-left: 16px;
-
 }
 
 .logo {
@@ -113,7 +109,7 @@ h1 {
     display: inline-block;
 }
 
-.photo {
+.highlight {
     position: absolute;
     display: block;
     margin-top: 18px;
@@ -132,15 +128,90 @@ h1 {
     width: 0;
 }
 
+.call {
+    display: none;
+}
+
+.chat {
+    display: none;
+}
+
+.profile {
+    display: none;
+}
+
 .continion a {
     text-decoration: none;
     color: black;
     font-weight: 600;
     display: inline-block;
     margin: 15px;
+    margin-left: 20px;
 }
 
 span {
     margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .logo::after {
+        content: url(./img/divider.png);
+        position: absolute;
+        left: 70px;
+        top: 20px;
+        width: 10px;
+        height: 10px;
+    }
+    .logo {
+        margin-bottom: 3px;
+        margin-left: 15px;
+    }
+    
+    .opisanie {
+        display: flex;
+    }
+
+    .continion {
+        position: absolute;
+        top: 330px;
+    }
+
+    .down_photo {
+        width: 50%;
+        margin-left: 20px;
+        border-radius: 5px; 
+    }
+
+    p::after{
+        content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+    }
+
+    .call {
+        display: inline;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+
+    .chat {
+        display: inline;
+        margin-top: 5px;
+        margin-right: 16px;
+    }
+
+    .profile {
+        display: inline;
+        margin-top: 5px;
+        margin-right: 16px;
+    }
+    
+    .call::after {
+        content: url(./img/divider.png);
+        position: absolute;
+        top: 20px;
+        right: 135px;
+
+    }
+    
 }
 
