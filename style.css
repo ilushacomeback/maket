@@ -30,7 +30,8 @@ body {
     justify-content: space-between;
     background: #fff; 
     border-bottom: 2px solid #D9FFF5;
-    ;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .burger {
@@ -79,6 +80,7 @@ body {
     line-height: 24px;
     color: #7E7E82;
     padding-left: 20px;
+    
 }
 
 .service-list::-webkit-scrollbar { 
@@ -164,6 +166,15 @@ span {
     display: none;
 }
 
+.empty {
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    right: 0;
+    top: 30%;
+}
+
 
 @media (min-width: 768px) {
     .logo::after {
@@ -230,6 +241,7 @@ span {
 
     .header {
         border: 0;
+        padding: 0;
     }
 
 
@@ -304,6 +316,10 @@ span {
 
     .for_1120px {
         display: inline;
+    }
+
+    .empty {
+        display: none;
     }
 
 
