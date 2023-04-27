@@ -46,32 +46,34 @@ body {
 
 .status {
     margin-top: 5px;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-right: 16px;
+   
 }
 
 .repair {
     margin-top: 5px;
-    margin-right: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    
 } 
 
-.header-left {
+.header__left {
     margin-top: 10px;
     
 }
 
-.header-right {
+.header__right {
     margin-top: 10px;
 }   
 
-.service-list {
+.service__list {
     justify-content: space-between;
     white-space: nowrap;
     font-size: 16px;
     overflow: auto;
 }
 
-.service-list-item {
+.service__list_item {
     width: fit-content;
     display: inline;
     border: 10px solid;
@@ -83,16 +85,16 @@ body {
     
 }
 
-.service-list::-webkit-scrollbar { 
+.service__list::-webkit-scrollbar { 
     width: 0;
 }
 
-.service-list-item a {
+.service__list_item a {
     text-decoration: none;
     color: #7E7E82;
 }
 
-.service-list-item  a:focus {
+.service__list_item  a:focus {
     border: 2px solid #B8FFEC;
     border-radius: 10px;
     padding: 5px;
@@ -128,7 +130,7 @@ h1 {
     content: url(./img/divider.png);
     position: absolute;
     left: 188px;
-    top: 20px;
+    top: 24px;
     width: 10px;
     height: 10px;
 }
@@ -181,7 +183,7 @@ span {
         content: url(./img/divider.png);
         position: absolute;
         left: 70px;
-        top: 20px;
+        top: 25px;
         width: 10px;
         height: 10px;
     }
@@ -196,13 +198,14 @@ span {
 
     .continion {
         position: absolute;
-        top: 310px;
+        top: 320px;
     }
 
     .down_photo {
         width: 50%;
         margin-left: 20px;
         border-radius: 5px; 
+        padding-right: 20px;
     }
 
     p::after{
@@ -230,7 +233,7 @@ span {
     .call::after {
         content: url(./img/divider.png);
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 135px;
 
     }
@@ -239,13 +242,21 @@ span {
 
 @media (min-width: 1120px) {
 
+    body {
+        padding-right: 20px;
+    }
+
+    .service__list {
+        padding-right: 15px;
+    }
+
     .header {
         border: 0;
         padding: 0;
     }
 
 
-    .header-left {
+    .header__left {
         display: none;
     }
 
@@ -289,27 +300,28 @@ span {
         margin-right: 20px;
         margin-top: 30px;
         margin-left: 20px;
-        border-radius: 5px; 
+        border-radius: 5px;
+        padding-right: 0;
     }
  
     .status {
         display: block;
     }
 
-    .header-right {
+    .header__right {
         position: absolute;
-        right: 0;
+        right: 5px;
         display: flex;
         justify-content: right;
     }
 
-    .header-right a {
+    .header__right a {
         text-decoration: none;
         color: black;
         font-weight: 600;
     }
 
-    .header-right img {
+    .header__right img {
         position: relative;
         top: 15px;
     }
@@ -322,7 +334,19 @@ span {
         display: none;
     }
 
+}
 
+@media (min-width: 2000px) {
+
+.container {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.header__right {
+    padding-right: 18%;
+}
+        
 }
        
 
