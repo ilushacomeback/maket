@@ -66,14 +66,14 @@ body {
     margin-top: 10px;
 }   
 
-.service__list {
+.service_list {
     justify-content: space-between;
     white-space: nowrap;
     font-size: 16px;
     overflow: auto;
 }
 
-.service__list_item {
+.service_list-item {
     width: fit-content;
     display: inline;
     border: 10px solid;
@@ -85,16 +85,16 @@ body {
     
 }
 
-.service__list::-webkit-scrollbar { 
+.service_list::-webkit-scrollbar { 
     width: 0;
 }
 
-.service__list_item a {
+.service_list-item a {
     text-decoration: none;
     color: #7E7E82;
 }
 
-.service__list_item  a:focus {
+.service_list-item  a:focus {
     border: 2px solid #B8FFEC;
     border-radius: 10px;
     padding: 5px;
@@ -160,13 +160,13 @@ span {
     margin: 10px;
 }
 
-.header_1120px {
+.header__right-1120px {
     display: none;
 }
 
-.for_1120px {
+/* .for-1120px {
     display: none;
-}
+} */
 
 .empty {
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
@@ -201,7 +201,7 @@ span {
         top: 320px;
     }
 
-    .down_photo {
+    .down-photo {
         width: 50%;
         margin-left: 20px;
         border-radius: 5px; 
@@ -246,7 +246,7 @@ span {
         padding-right: 20px;
     }
 
-    .service__list {
+    .service_list {
         padding-right: 15px;
     }
 
@@ -295,7 +295,7 @@ span {
         content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
     }
 
-    .down_photo {
+    .down-photo {
         width: 70%;
         margin-right: 20px;
         margin-top: 30px;
@@ -326,7 +326,7 @@ span {
         top: 15px;
     }
 
-    .for_1120px {
+    .header__right-1120px {
         display: inline;
     }
 
@@ -341,10 +341,12 @@ span {
 .container {
     padding-left: 18%;
     padding-right: 18%;
+    /* width: 1120px; */
 }
 
 .header__right {
     padding-right: 18%;
+    /* max-width: 1120px; */
 }
         
 }
