@@ -164,11 +164,8 @@ span {
     display: none;
 }
 
-/* .for-1120px {
-    display: none;
-} */
-
-.empty {
+h1::after {
+    content: '';
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     position: absolute;
     width: 24px;
@@ -192,7 +189,7 @@ span {
         margin-left: 15px;
     }
     
-    .opisanie {
+    .description {
         display: flex;
     }
 
