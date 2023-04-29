@@ -170,12 +170,6 @@ h1 {
     padding-right: 12px;
 }
 
-
-
-span {
-    margin: 10px;
-}
-
 .header__right-1120px {
     display: none;
 }
@@ -188,6 +182,10 @@ h1::after {
     height: 40px;
     right: 0;
     top: 30%;
+}
+
+.down-photo {
+    max-width: 530px;
 }
 
 
@@ -259,6 +257,7 @@ h1::after {
         padding-right: 20px;
     }
 
+
     .service_list {
         padding-right: 15px;
     }
@@ -309,12 +308,8 @@ h1::after {
     }
 
     .down-photo {
-        width: 70%;
-        margin-right: 20px;
         margin-top: 30px;
-        margin-left: 20px;
         border-radius: 5px;
-        padding-right: 0;
     }
  
     .status {
@@ -343,24 +338,26 @@ h1::after {
         display: inline;
     }
 
-    .empty {
+    h1::after {
         display: none;
     }
 
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1121px) {
 
 .container {
-    padding-left: 18%;
-    padding-right: 18%;
-    /* width: 1120px; */
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__right {
-    padding-right: 18%;
-    /* max-width: 1120px; */
+    position: absolute;
+    right: inherit;
+    width: 1120px;
 }
+
         
 }
        
