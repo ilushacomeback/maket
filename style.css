@@ -13,6 +13,15 @@
     margin: 0;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
 body {
     font-family: "TTLakes-Regular";
     width: 100%;
@@ -147,14 +156,21 @@ h1 {
     display: none;
 }
 
-.continion a {
-    text-decoration: none;
-    color: black;
+
+.button {
+    font-family: "TTLakes-Regular";
+    font-size: 16px;
     font-weight: 600;
-    display: inline-block;
     margin: 15px;
     margin-left: 20px;
 }
+
+.button::before {
+    content: url(./img/ic/icon.png);
+    padding-right: 12px;
+}
+
+
 
 span {
     margin: 10px;
@@ -193,7 +209,7 @@ h1::after {
         display: flex;
     }
 
-    .continion {
+    .button {
         position: absolute;
         top: 320px;
     }
@@ -279,7 +295,7 @@ h1::after {
         margin-top: 27px;
     }
 
-    .continion {
+    .button {
         position: absolute;
         top: 300px;
     }
