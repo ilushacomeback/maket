@@ -45,8 +45,8 @@ body {
 
 .burger {
     margin-top: 5px;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .logo {
@@ -61,8 +61,8 @@ body {
 
 .repair {
     margin-top: 5px;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
     
 } 
 
@@ -80,6 +80,7 @@ body {
     white-space: nowrap;
     font-size: 16px;
     overflow: auto;
+    margin-top: 10px;
 }
 
 .service_list-item {
@@ -90,7 +91,7 @@ body {
     border-color: #f8f8f8;
     line-height: 24px;
     color: #7E7E82;
-    padding-left: 20px;
+    margin-left: 20px;
     
 }
 
@@ -124,7 +125,7 @@ h1 {
     font-family: "TT bold";
     margin-top: 20px;
     margin-left: 15px;
-    margin-bottom: 10px;
+    
     font-size: 28px;
     display: inline-block;
 }
@@ -213,7 +214,7 @@ h1 {
         width: 50%;
         margin-left: 20px;
         border-radius: 5px; 
-        padding-right: 20px;
+        margin-right: 20px;
     }
 
     .call {
