@@ -185,10 +185,6 @@ h1 {
     right: 0;
 }
 
-.down-photo {
-    max-width: 530px;
-}
-
 
 @media (min-width: 768px) {
     .logo::after {
@@ -301,6 +297,7 @@ h1 {
     }
 
     .down-photo {
+        max-width: 530px;
         margin-top: 30px;
         border-radius: 5px;
     }
