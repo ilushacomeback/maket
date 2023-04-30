@@ -172,6 +172,8 @@ h1 {
 
 .header__right-1120px {
     display: none;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #repair::after {
