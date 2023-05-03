@@ -213,11 +213,12 @@ h1::before {
 
     .button {
         position: absolute;
-        top: 320px;
+        top: 210px;
     }
 
     .down-photo {
         width: 50%;
+        margin-top: 10px;
         margin-left: 20px;
         border-radius: 5px; 
         margin-right: 20px;
@@ -301,7 +302,7 @@ h1::before {
 
     .button {
         position: absolute;
-        top: 300px;
+        top: 230px;
     }
 
     p {
