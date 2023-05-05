@@ -22,6 +22,10 @@ button {
     cursor: pointer;
   }
 
+  button:hover {
+    scale: 0.9;
+  }
+
 body {
     font-family: "TTLakes-Regular";
     width: 100%;
@@ -194,6 +198,7 @@ h1::before {
 
 
 @media (min-width: 768px) {
+
     .logo::after {
         content: url(./img/divider.png);
         position: absolute;
@@ -206,6 +211,10 @@ h1::before {
         margin-bottom: 3px;
         margin-left: 15px;
     }
+
+    .header-right {
+        margin-right: 5px;
+    }
     
     .description {
         display: flex;
@@ -213,12 +222,11 @@ h1::before {
 
     .button {
         position: absolute;
-        top: 210px;
+        top: 320px;
     }
 
     .down-photo {
         width: 50%;
-        margin-top: 10px;
         margin-left: 20px;
         border-radius: 5px; 
         margin-right: 20px;
@@ -246,7 +254,7 @@ h1::before {
         content: url(./img/divider.png);
         position: absolute;
         top: 25px;
-        right: 135px;
+        right: 140px;
 
     }
 
@@ -302,7 +310,7 @@ h1::before {
 
     .button {
         position: absolute;
-        top: 230px;
+        top: 300px;
     }
 
     p {
@@ -321,6 +329,7 @@ h1::before {
 
     .header-right {
         position: absolute;
+        z-index: 1;
         right: 5px;
         display: flex;
         justify-content: right;
