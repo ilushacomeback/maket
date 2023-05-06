@@ -105,7 +105,8 @@ body {
     text-decoration: none;
     color: #7E7E82;
     transition: all 0.2s linear;
-}
+} 
+
 
 .service-list_item  a:focus {
     border: 2px solid #B8FFEC;
