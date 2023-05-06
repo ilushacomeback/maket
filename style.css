@@ -151,7 +151,7 @@ h1::before {
 .logo::after {
     content: url(./img/divider.png);
     position: absolute;
-    left: 188px;
+    left: 182px;
     top: 24px;
     width: 10px;
     height: 10px;
