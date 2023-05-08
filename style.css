@@ -81,11 +81,10 @@ body {
 }
 
 .service-list {
-    justify-content: space-between;
     white-space: nowrap;
     font-size: 16px;
     overflow: auto;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .service-list_item {
@@ -120,7 +119,7 @@ body {
 
 p {
     font-family: "TTLakes-Regular";
-    width: 90%;
+    margin-right: 15px;
     margin-left: 15px;
     font-size: 14px;
     margin-top: 10px;
@@ -223,11 +222,6 @@ h1::before {
         display: flex;
     }
 
-    .button {
-        position: absolute;
-        top: 320px;
-    }
-
     .down-photo {
         width: 50%;
         margin-left: 20px;
@@ -312,18 +306,14 @@ h1::before {
         top: 28px;
     }
 
-    .button {
-        position: absolute;
-        top: 300px;
-    }
 
     p {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .down-photo {
         max-width: 530px;
-        margin-top: 30px;
+        margin-top: 15px;
         border-radius: 5px;
     }
  
@@ -358,23 +348,18 @@ h1::before {
         display: none;
     }
 
-}
+    .container {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .header-right {
+        position: absolute;
+        right: inherit;
+        width: 1120px;
+    }
 
-@media (min-width: 1121px) {
-
-.container {
-    width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header-right {
-    position: absolute;
-    right: inherit;
-    width: 1120px;
-}
-
-        
 }
        
 
