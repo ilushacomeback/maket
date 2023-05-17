@@ -1,365 +1,353 @@
 @font-face {
-    font-family: "TTLakes-Regular";
-    src: url("./fonts/TTLakes-Regular.woff") format("woff");
+  font-family: "TTLakes-Regular";
+  src: url("./fonts/TTLakes-Regular.woff") format("woff");
 }
 @font-face {
-    font-family: "TT Bold";
-    src: url("./fonts/TTLakes-ExtraBold.woff") format("woff");
+  font-family: "TT Bold";
+  src: url("./fonts/TTLakes-ExtraBold.woff") format("woff");
 }
 
 * {
-    border: 0;
-    padding: 0;
-    margin: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-    transition-duration: 0.2s;
-  }
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
 
-  button:hover {
-    scale: 0.9;
-    transition-duration: 0.5s;
-  }
+button:hover {
+  scale: 0.9;
+  transition-duration: 0.5s;
+}
 
 body {
-    font-family: "TTLakes-Regular";
-    width: 100%;
-    background-size: 100%;
-    background-color: #f8f8f8;
+  font-family: "TTLakes-Regular";
+  width: 100%;
+  background-size: 100%;
+  background-color: #f8f8f8;
 }
 
 .nobullet {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    background: #fff; 
-    border-bottom: 2px solid #D9FFF5;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 2px solid #d9fff5;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .burger {
-    margin-top: 5px;
-    margin-right: 16px;
-    margin-left: 16px;
+  margin-top: 5px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .logo {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .status {
-    margin-top: 5px;
-    margin-right: 16px;
-   
+  margin-top: 5px;
+  margin-right: 16px;
 }
 
 .repair {
-    margin-top: 5px;
-    margin-right: 16px;
-    margin-left: 16px;
-    
-} 
+  margin-top: 5px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
 
 .header-left {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .header-right {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .service-list {
-    white-space: nowrap;
-    font-size: 16px;
-    overflow: auto;
-    margin-top: 15px;
+  white-space: nowrap;
+  font-size: 16px;
+  overflow: auto;
+  margin-top: 15px;
 }
 
 .service-list_item {
-    width: fit-content;
-    display: inline;
-    margin: 10px;
-    border-color: #f8f8f8;
-    line-height: 24px;
-    margin-left: 20px;
+  width: fit-content;
+  display: inline;
+  margin: 10px;
+  border-color: #f8f8f8;
+  line-height: 24px;
+  margin-left: 20px;
 }
 
-.service-list::-webkit-scrollbar { 
-    display: none;
+.service-list::-webkit-scrollbar {
+  display: none;
 }
 
 .service-list_item a {
-    text-decoration: none;
-    color: #7E7E82;
-    transition: all 0.2s linear;
-} 
+  text-decoration: none;
+  color: #7e7e82;
+  transition: all 0.2s linear;
+}
 
-
-.service-list_item  a:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: white;
-    transition: all 0.2s linear;
+.service-list_item a:focus {
+  border: 2px solid #b8ffec;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  transition: all 0.2s linear;
 }
 
 p {
-    font-family: "TTLakes-Regular";
-    margin-right: 15px;
-    margin-left: 15px;
-    font-size: 14px;
-    margin-top: 10px;
+  font-family: "TTLakes-Regular";
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 h1 {
-    font-family: "TT bold";
-    margin-top: 20px;
-    margin-left: 15px;
-    font-size: 28px;
-    display: inline-block;
+  font-family: "TT bold";
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 28px;
+  display: inline-block;
 }
 
 main {
-    position: relative;
+  position: relative;
 }
 
 h1::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 40px;
-    background: #41F6D7;
-    border-radius: 0 5px 5px 0;
-    left: 0;
-    top: 15px;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: #41f6d7;
+  border-radius: 0 5px 5px 0;
+  left: 0;
+  top: 15px;
 }
 
 .logo::after {
-    content: url(./img/divider.png);
-    position: absolute;
-    left: 182px;
-    top: 24px;
-    width: 10px;
-    height: 10px;
+  content: url(./img/divider.png);
+  position: absolute;
+  left: 182px;
+  top: 24px;
+  width: 10px;
+  height: 10px;
 }
 
 .call {
-    display: none;
+  display: none;
 }
 
 .chat {
-    display: none;
+  display: none;
 }
 
 .profile {
-    display: none;
+  display: none;
 }
 
-
 .button {
-    font-family: "TTLakes-Regular";
-    font-size: 16px;
-    font-weight: 600;
-    margin: 15px;
-    margin-left: 20px;
+  font-family: "TTLakes-Regular";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px;
+  margin-left: 20px;
 }
 
 .button::before {
-    content: url(./img/ic/icon.png);
-    padding-right: 12px;
+  content: url(./img/ic/icon.png);
+  padding-right: 12px;
 }
 
-.header-right--1120px {
-    display: none;
-    font-size: 16px;
-    font-weight: 600;
+.header-right__1120px {
+  display: none;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #repair::after {
-    content: '';
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    position: absolute;
-    width: 24px;
-    height: 40px;
-    right: 0;
+  content: "";
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  position: absolute;
+  width: 24px;
+  height: 40px;
+  right: 0;
 }
 
-
 @media (min-width: 768px) {
+  .logo::after {
+    content: url(./img/divider.png);
+    position: absolute;
+    left: 70px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
+  }
+  .logo {
+    margin-bottom: 3px;
+    margin-left: 15px;
+  }
 
-    .logo::after {
-        content: url(./img/divider.png);
-        position: absolute;
-        left: 70px;
-        top: 25px;
-        width: 10px;
-        height: 10px;
-    }
-    .logo {
-        margin-bottom: 3px;
-        margin-left: 15px;
-    }
+  .header-right {
+    margin-right: 5px;
+  }
 
-    .header-right {
-        margin-right: 5px;
-    }
-    
-    .description {
-        display: flex;
-    }
+  .description {
+    display: flex;
+  }
 
-    .down-photo {
-        width: 50%;
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-right: 20px;
-        border-radius: 5px; 
-    }
+  .down-photo {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
 
-    .call {
-        display: inline;
-        margin-top: 5px;
-        margin-right: 30px;
-    }
+  .call {
+    display: inline;
+    margin-top: 5px;
+    margin-right: 30px;
+  }
 
-    .chat {
-        display: inline;
-        margin-top: 5px;
-        margin-right: 16px;
-    }
+  .chat {
+    display: inline;
+    margin-top: 5px;
+    margin-right: 16px;
+  }
 
-    .profile {
-        display: inline;
-        margin-top: 5px;
-        margin-right: 16px;
-    }
-    
-    .call::after {
-        content: url(./img/divider.png);
-        position: absolute;
-        top: 25px;
-        right: 140px;
+  .profile {
+    display: inline;
+    margin-top: 5px;
+    margin-right: 16px;
+  }
 
-    }
-
+  .call::after {
+    content: url(./img/divider.png);
+    position: absolute;
+    top: 25px;
+    right: 140px;
+  }
 }
 
 @media (min-width: 1120px) {
+  body {
+    padding-right: 20px;
+  }
 
-    body {
-        padding-right: 20px;
-    }
+  .service-list {
+    margin-right: 15px;
+  }
 
+  .header {
+    border: 0;
+    padding: 0;
+  }
 
-    .service-list {
-        margin-right: 15px;
-    }
+  .header-left {
+    display: none;
+  }
 
-    .header {
-        border: 0;
-        padding: 0;
-    }
+  .chat {
+    display: none;
+  }
 
+  .profile {
+    display: none;
+  }
 
-    .header-left {
-        display: none;
-    }
+  .call {
+    display: none;
+  }
+  h1 {
+    margin-top: 30px;
+  }
 
+  h1::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: #41f6d7;
+    border-radius: 0 5px 5px 0;
+    left: 0;
+    top: 28px;
+  }
 
-    .chat {
-        display: none;
-    }
+  p {
+    margin-top: 15px;
+  }
 
-    .profile {
-        display: none;
-    }
-    
-    .call {
-        display: none;
-    }
-    h1 {
-        margin-top: 30px;
-    }
-    
-    h1::before {
-        content: '';
-        position: absolute;
-        width: 4px;
-        height: 40px;
-        background: #41F6D7;
-        border-radius: 0 5px 5px 0;
-        left: 0;
-        top: 28px;
-    }
+  .down-photo {
+    max-width: 530px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
 
+  .status {
+    display: block;
+  }
 
-    p {
-        margin-top: 15px;
-    }
+  .header-right {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    display: flex;
+    justify-content: right;
+  }
 
-    .down-photo {
-        max-width: 530px;
-        margin-top: 15px;
-        border-radius: 5px;
-    }
- 
-    .status {
-        display: block;
-    }
+  .header-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
 
-    .header-right {
-        position: absolute;
-        z-index: 1;
-        right: 5px;
-        display: flex;
-        justify-content: right;
-    }
+  .header-right img {
+    position: relative;
+    top: 15px;
+  }
 
-    .header-right a {
-        text-decoration: none;
-        color: black;
-        font-weight: 600;
-    }
+  .header-right__1120px {
+    display: inline;
+  }
 
-    .header-right img {
-        position: relative;
-        top: 15px;
-    }
+  h1::after {
+    display: none;
+  }
 
-    .header-right--1120px {
-        display: inline;
-    }
+  .container {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    h1::after {
-        display: none;
-    }
-
-    .container {
-        width: 1120px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .header-right {
-        position: absolute;
-        right: inherit;
-        width: 1120px;
-    }
-
+  .header-right {
+    position: absolute;
+    right: inherit;
+    width: 1120px;
+  }
 }
-       
-
