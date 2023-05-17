@@ -29,6 +29,7 @@ button:hover {
 }
 
 body {
+  box-sizing: border-box;
   font-family: "TTLakes-Regular";
   width: 100%;
   background-size: 100%;
